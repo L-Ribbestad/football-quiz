@@ -83,11 +83,9 @@ let questionArr = [
     },
 ]
 
-let darkModeBtn = document.querySelector("#darkToggle");
 const questionText = document.querySelector("#question");
 const answerButtons = document.querySelector("#answer-buttons");
 const nextButton = document.querySelector("#next-btn");
-darkModeBtn.addEventListener("change", changeBackground);
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -242,14 +240,5 @@ nextButton.addEventListener("click", () => {
 
 startQuiz();
 
-function changeBackground() {
-    if(darkModeBtn.checked){
-        document.body.style.background = "black";
-        document.body.style.color = "white";
-    }else{
-    document.body.style.background = "white";
-    document.body.style.color = "black";
-    }
-}
 
 
